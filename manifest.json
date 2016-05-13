@@ -1,6 +1,6 @@
 {
   "manifest_version": 2,
-  "name": "Steam inventory helper",
+  "name": "Steam inventory helper (backup)",
   "short_name": "SIH",
   "description": "__MSG_extension_description__",
   "default_locale": "en",

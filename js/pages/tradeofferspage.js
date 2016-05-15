@@ -22,7 +22,7 @@ chrome.storage.sync.get({
 $(function () {
     $.ajax({
         method: "GET",
-        url: 'http://steamcommunity.com/id/temp/tradeoffers/',
+        url: 'http://steamcommunity.com/id/me/tradeoffers/',
         success: function (response, textStatus, jqXHR) {
             var res = response;
 

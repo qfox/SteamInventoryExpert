@@ -341,7 +341,7 @@ var checkSteamOffers = function (items) {
     //console.log('Get offers');
     $.ajax({
         method: "GET",
-        url: 'http://steamcommunity.com/id/temp/tradeoffers/',
+        url: 'http://steamcommunity.com/id/me/tradeoffers/',
         success: function (response, textStatus, jqXHR) {
             var res = response;
             //console.log('Get offers done');

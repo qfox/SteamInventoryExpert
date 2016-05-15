@@ -1,10 +1,10 @@
 {
   "manifest_version": 2,
-  "name": "Steam inventory helper (backup)",
+  "name": "Steam Inventory Expert",
   "short_name": "SIH",
-  "description": "__MSG_extension_description__",
+  "description": "Open source version of Steam Inventory Helper",
   "default_locale": "en",
-  "version": "1.8.9.1",
+  "version": "1.0.0.0",
   "background": {
     "scripts": [ "js/jquery-1.10.2.min.js", "js/offernof.js" ],
     "persistent": true
@@ -86,10 +86,10 @@
     "background",
     "webRequest",
     "webRequestBlocking",
-    "*://steamcommunity.com/*",
+    "*://*.steamcommunity.com/*",
     "*://*.steampowered.com/*",
-    "http://*.steamstatic.com/*",
-    "*://steamrep.com/*"
+    "*://*.steamstatic.com/*",
+    "*://*.steamrep.com/*"
   ],
   "externally_connectable":{ 
 	"matches":["*://steamcommunity.com/*"]
@@ -102,5 +102,5 @@
     "assets/*",
     "js/lang/*"
   ],
-  "homepage_url": "https://chrome.google.com/webstore/detail/steam-inventory-helper/cmeakgjggjdlcpncigglobpjbkabhmjl"
+  "homepage_url": "https://github.com/ncla/SteamInventoryExpert"
 }

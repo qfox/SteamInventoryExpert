@@ -3,7 +3,7 @@
 
 
 var sCommon = document.createElement('script');
-sCommon.src = chrome.extension.getURL('js/invites.script.min.js');
+sCommon.src = chrome.extension.getURL('js/invites.script.js');
 (document.head || document.documentElement).appendChild(sCommon);
 sCommon.onload = function () {
     sCommon.parentNode.removeChild(sCommon);

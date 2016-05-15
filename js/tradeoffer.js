@@ -110,11 +110,11 @@ chrome.storage.sync.get({
 });
 
 var sCommon = document.createElement('script');
-sCommon.src = chrome.extension.getURL('js/hovermod.script.min.js');
+sCommon.src = chrome.extension.getURL('js/hovermod.script.js');
 (document.head || document.documentElement).appendChild(sCommon);
 sCommon.onload = function () {
     var sOffer = document.createElement('script');
-    sOffer.src = chrome.extension.getURL('js/tradeoffer.script.min.js');
+    sOffer.src = chrome.extension.getURL('js/tradeoffer.script.js');
     (document.head || document.documentElement).appendChild(sOffer);
     sOffer.onload = function () {
         sOffer.parentNode.removeChild(sOffer);

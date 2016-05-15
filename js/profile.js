@@ -6,7 +6,7 @@ cssF.type = 'text/css';
 (document.head || document.documentElement).appendChild(cssF);
 
 var sProfile = document.createElement('script');
-sProfile.src = chrome.extension.getURL('js/profile.script.min.js');
+sProfile.src = chrome.extension.getURL('js/profile.script.js');
 (document.head || document.documentElement).appendChild(sProfile);
 sProfile.onload = function () {
     sProfile.parentNode.removeChild(sProfile);

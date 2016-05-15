@@ -952,21 +952,6 @@ var SetupExternalDropdown = function (appid) {
     }
 }
 
-var _verifyUsers = function () {
-    chrome.runtime.sendMessage(SIHID, { type: "CSGOFAST", data: "bots" }, function (e) {
-        if (e.success) {
-            var arr = e.bots;
-            //arr.push('76561198047133679');
-            for (var i = 0; i < arr.length; i++) {
-                if (g_ulTradePartnerSteamID == arr[i]) {
-                    $J('#trade_theirs h2').append('<a href="#" class="verified-user" title="Verified by CSGOFAST">Verified by CSGOFAST</a>');
-                    return false;
-                }
-            }
-        }
-    });
-}
-
 jQuery(function () {
 
     if (typeof (custombuttons) != 'undefined') {
@@ -1224,15 +1209,6 @@ jQuery(function () {
     StopWatchingForUnload();
     ModifyItemDisplay();
     ModifySelectInventory();
-    window.setTimeout(function () {
-        _verifyUsers();
-        if (!hidebanner) {
-            var divSponsor = $J('<fieldset class="sort" style="margin-top:50px"><legend>SIH\'s Sponsor</legend></fieldset>');
-            divSponsor.append('<a href="https://goo.gl/g51bJg" target="_blank" class="sponsor" title="CSGOFAST"><img src="chrome-extension://' + SIHID + '/assets/csgofast_small.png" alt="" style="width:100%"></a>');
-            divRight.append(divSponsor);
-        }
-    }, 200);
-
 });
 
 var econItemExp = /data-economy-item="(\d+)\/(\d+)\/(\d+)\/(\d+)"/gi

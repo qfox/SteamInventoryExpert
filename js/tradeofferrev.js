@@ -22,11 +22,11 @@ cssPQ.type = 'text/css';
 (document.head || document.documentElement).appendChild(cssPQ);
 
 var sCommon = document.createElement('script');
-sCommon.src = chrome.extension.getURL('js/hovermod.script.min.js');
+sCommon.src = chrome.extension.getURL('js/hovermod.script.js');
 (document.head || document.documentElement).appendChild(sCommon);
 sCommon.onload = function () {
     var sOffer = document.createElement('script');
-    sOffer.src = chrome.extension.getURL('js/tradeofferrev.script.min.js');
+    sOffer.src = chrome.extension.getURL('js/tradeofferrev.script.js');
     (document.head || document.documentElement).appendChild(sOffer);
     sOffer.onload = function () {
         sOffer.parentNode.removeChild(sOffer);

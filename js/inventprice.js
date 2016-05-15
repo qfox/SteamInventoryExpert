@@ -23,7 +23,7 @@ cssPQ.type = 'text/css';
 (document.head || document.documentElement).appendChild(cssPQ);
 
 var sCommon = document.createElement('script');
-sCommon.src = chrome.extension.getURL('js/inventprice.script.min.js');
+sCommon.src = chrome.extension.getURL('js/inventprice.script.js');
 (document.head || document.documentElement).appendChild(sCommon);
 sCommon.onload = function () {
     sCommon.parentNode.removeChild(sCommon);

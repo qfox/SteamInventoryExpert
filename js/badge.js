@@ -31,7 +31,7 @@ chrome.storage.sync.get({
 });
 
 var sOffer = document.createElement('script');
-sOffer.src = chrome.extension.getURL('js/badge.script.min.js');
+sOffer.src = chrome.extension.getURL('js/badge.script.js');
 (document.head || document.documentElement).appendChild(sOffer);
 sOffer.onload = function () {
     sOffer.parentNode.removeChild(sOffer);
